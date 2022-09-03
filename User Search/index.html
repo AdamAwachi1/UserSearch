@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="assets\GitHub-Mark-32px.png">
+  <title>Github search API</title>
+  <link rel="stylesheet" href="style.css" >
+
+</head>
+<body style="background-color:#FFFF8F;">
+  <div class="container">
+    <main>
+      
+      <div id="app">
+        <div class="searchbar-container active">
+          <input type="search" name="user-input" id="input" placeholder="Search">
+          <div class="error">
+            <p id="no-results">No results</p>
+          </div>
+          <!-- <div class="switch">
+            <button class="btn-search" id="submit2">Switch</button>
+          </div> -->
+          <button class="btn-search" id="submit">Search</button>
+        </div>
+        <div class="profile-container">
+          <div class="profile-content">
+            <div class="profile-header">
+              <img id="avatar" alt="">
+
+              <!-- alumine kast -->
+              <div class="profile-info-wrapper">
+                <div class="profile-name">
+                  <h2 id="name"></h2>
+                  <p id="user"></p>
+                </div>
+                <p id="date"></p>
+              </div>
+            </div>
+            <p id="bio"></p>
+            <div class="profile-stats-wrapper">
+              <div class="profile-stat">
+                  <p class="stat-title">Repositories</p>
+                  <p id="repos"class="stat-value"></p>
+              </div>
+              <div class="profile-stat">
+                <p class="stat-title">Followers</p>
+                <p id="followers" class="stat-value"></p>
+              </div>
+              <div class="profile-stat">
+                <p class="stat-title">Following</p>
+                <p id="following" class="stat-value"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
